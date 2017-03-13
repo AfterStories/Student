@@ -1,0 +1,159 @@
+
+body,html,ul,li{
+	max-width: 1264px;
+	max-height: 682px;
+	margin: 0;
+	padding:0;
+	font-family: "Microsoft YaHei" ! important;
+}
+a{text-decoration: none;color: #000;}
+.clear {
+	clear:both;
+	overflow: hidden;
+} 
+header{
+	
+	width:1264px;
+	height: 76px;
+	background-color: #fff;	
+	display: flex;
+	display: -webkit-flex;
+	justify-content: space-between;
+	 align-items: center;
+	}
+#logo{
+	width: 140px;
+	height: 34px;
+	float: left;
+	position: relative;
+	left: 20px;
+	background-image: url("../img/logo.png");
+}
+#RInfo{
+	width: 240px;
+	height: 20px;	
+	font-size: 18px;
+	float: right;
+	position: relative;
+	right: 20px;
+}	
+#main{
+	widows: 100%;
+	height: 379px;
+	background-image: url("../img/background.png");
+}
+#imgICON{
+	float: left;
+	position: relative;
+	left: 194px;
+	top:92px;
+	width: 302px;
+	height: 206px;
+	background-image: url("../img/backICON.png")
+}
+#loginbox{
+	width: 248px;
+	height: 232px;
+	background-color: #fff;
+	padding:16px 20px 15px;
+	float: right;
+	position: relative;
+	right:168px;
+	top:70px;	
+}
+#loginTitle{
+	width: 100%;
+	overflow:hidden; 
+}
+#LTitle{
+	font-size: 20px;
+	color:#747474;
+	float: left;
+}
+#RTitle{
+	font-size: 18px;	
+	text-decoration: none;
+	color:#f44e52;
+	float: right;
+}
+#loginInput{
+	width: 100%;
+	height: 182px;
+}
+.userLogin{
+	padding-left: 15px;
+	float: left;
+	width: 80%;
+	height: 30px;
+	position: relative;
+	right: 0;
+	border: 1px solid #bcbcbc;border-left: none;
+	-webkit-box-shadow:0 0 0 50px #fff inset; 
+	margin-bottom: 10px;
+}
+
+.loginImgBox{
+	width:30px;
+	height: 32px;
+	float: left;
+
+	border: 1px solid #cacaca; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.loginImg{
+	width:15px;
+	height:22px;
+}
+#username{
+	margin: 20px 0; 
+}
+#forget{
+	
+    position: absolute;
+    right: 22px;
+
+}
+#loginBTN{
+	color:#fff;
+	font-size: 18px;
+	background-color: #509ee1;
+	width: 194px;
+	height: 28px;
+	text-align:center;
+	line-height: 28px;
+	margin:15px auto;
+}
+#Copyright{
+	font-size: 14px;
+	line-height: 12px;
+	margin-top: 6px;
+
+}
+#about{
+	width:372px;
+	margin:0 auto;
+	overflow: hidden;
+}
+#about>li{
+	padding:0 4px;
+	list-style: none;
+	float: left;
+
+}
+.border-right{
+	border-right: 1px solid #000;
+
+}
+.border-left{
+	border-left: 1px solid #000;
+
+}
+#CopyInfo{
+	margin-top: 6px;
+	text-align: center;
+}
+
