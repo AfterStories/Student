@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My Lesson</title>
+
+	<link rel="stylesheet" href="../lib/layui/css/layui.css"  media="all">
+	<link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+
+	<header>
+		<div id="logo">
+			
+		</div>
+		<div id="RInfo">
+			<div id="re" class="reBtn"><img class="reBtnImg" src="../img/re.png" alt=""><span>重启</span></div>
+			<div id="F5" class="reBtn"><img class="reBtnImg" src="../img/F5.png" alt=""><span>刷新</span></div>
+		</div>
+	</header> 
+	<main>
+	 <div id="iframe-Btn">
+	 	<div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief" style="margin:0;">
+  			<ul class="layui-tab-title" style="border:none;">
+  			   <li class="layui-this">一对一课程</li>
+  			   <li>小班课</li>
+  			</ul>
+  		</div>      
+	 </div>
+	<div id="Head">
+		<img src="../img/headimg.png" alt="">
+	</div>
+	<div id="username">
+		Conan
+	</div>
+
+		<div id="left-tab">
+			<a class="tab-btn selected" href="https://www.baidu.com/" target="LessonFrame">我的课程</a>
+			<a class="tab-btn " id="one" href="https://www.qq.com/" target="LessonFrame">一对一</a>
+			<a class="tab-btn " id="little" href="https://www.163.com/" target="LessonFrame">小班课</a>
+			<a class="tab-btn " id="myinfo" href="https://www.taobao.com/" target="LessonFrame">我的信息</a>
+		</div>
+		
+			<ul id="menu">
+				<li class="menu-li"><img src="../img/msgcenter.png" class="menu-img" alt=""><a href="">消息中心</a></li>
+				<li class="menu-li"><img src="../img/usercenter.png" class="menu-img" alt=""><a href="">会员中心</a></li>
+				<li class="menu-li"><img src="../img/download.png" class="menu-img" alt=""><a href="">下载中心</a></li>
+				<li class="menu-li"><img src="../img/system.png" class="menu-img" alt=""><a href="">系统菜单</a></li>
+			</ul>
+		
+		<iframe src="https://www.baidu.com/" name="LessonFrame" frameborder="0" id="Lessoniframe"  scrolling="no"></iframe>
+	</main>
+
+</body>
+<script type="text/javascript" src="../lib/jquery-3.1.1.js"> </script>
+<script src="../lib/layui/layui.js" charset="utf-8"></script>
+   
+    <script>
+    $(document).ready(function() {
+
+    		$(document.body).css({
+				"overflow-x":"hidden",
+				"overflow-y":"hidden"
+			});
+			$('#Lessoniframe').css({
+				"overflow-x":"hidden",
+				"overflow-y":"hidden"
+			});
+
+    });
+	layui.use('element', function(){
+	var element = layui.element(); //Tab的切换功能，切换事件监听等，需要依赖element模块
+  
+
+
+  
+});
+    </script>
+
+</html>
