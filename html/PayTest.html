@@ -19,6 +19,18 @@
 		<div id="imgICON">
 			
 		</div>
+
+		<form id="fofo">
+			currencyId  1<input type="text" name="currencyId">
+			goodsCount 1<input type="text" name="goodsCount">
+			goodsType 7<input type="text" name="goodsType">
+			channel 5<input type="text" name="channel">
+			<!-- JSESSIONID<input  id="JSE" type="text" name="jsessionid"> -->
+			
+		     <input  type="submit" value="啊" >  
+
+		</form>
+
 		<div id="loginbox">
 			<div id="loginTitle" class="clear">
 				<span id="LTitle">会员登录</span>
@@ -31,7 +43,7 @@
 			<input id="Password" type="password" class="userLogin" name="password" placeholder="Your Password"/>
 			<input type="checkbox" id="autoLogin"><span>自动登录</span>
 			<a id="forget" href=" #">忘记密码？</a>
-			<div id="loginBTN">立即登录</div>
+			<div id="loginBTN" onclick="Login()">立即登录</div>
 			</div>
 		</div>
 	</div>
@@ -50,6 +62,7 @@
 	</footer>
 </body>
 <script type="text/javascript" src="../lib/jquery-3.1.1.js"> </script>
+<script type="text/javascript" src="../lib/md5.js"> </script>
 <script type="text/javascript" src="../js/login.js"> </script>
     <script>
     $(document).ready(function() {
@@ -59,7 +72,24 @@
 				"overflow-y":"hidden"
 			});
 
+
+         function getSessionId(){  
+                var c_name = 'JSESSIONID';  
+                if(document.cookie.length>0){  
+                   c_start=document.cookie.indexOf(c_name + "=")  
+                   if(c_start!=-1){   
+                     c_start=c_start + c_name.length+1   
+                     c_end=document.cookie.indexOf(";",c_start)  
+                     if(c_end==-1) c_end=document.cookie.length  
+                     return unescape(document.cookie.substring(c_start,c_end));  
+                   }  
+                }  
+            } 
+
+
+
     });
 
     </script>
+
 </html>
