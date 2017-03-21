@@ -4,7 +4,9 @@
 		
 		$('.MyLesson-selected').show();
 		$('.MyLesson').hide();
+		
 	});
+
 	$('.MyLesson').click(function(){		
 		$('.MyLesson-selected').show();
 		$('.MyLesson').hide();
@@ -14,6 +16,7 @@
 		$('.myinfo').show();		
 		$('.one-selected').hide();
 		$('.one').show();
+		$('#MyUl').show().siblings('.layui-tab-title').hide();
 	});
 
 
@@ -26,6 +29,9 @@
 		$('.myinfo').show();		
 		$('.one-selected').show();
 		$('.one').hide();
+		$('#OneToOneUl').show().siblings('.layui-tab-title').hide();
+
+		
 	});
 
 
@@ -40,6 +46,7 @@
 		$('.myinfo').show();			
 		$('.one-selected').hide();
 		$('.one').show();
+		$('#littleUl').show().siblings('.layui-tab-title').hide();
 	});
 
 	$('#myinfo').click(function(){
@@ -50,7 +57,8 @@
 		$('.myinfo-selected').show();
 		$('.myinfo').hide();		
 		$('.one-selected').hide();
-		$('.one').show();	
+		$('.one').show();
+		$('#infoUl').show().siblings('.layui-tab-title').hide();	
 	});
 
     $(document).ready(function() {
