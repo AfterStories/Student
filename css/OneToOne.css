@@ -89,9 +89,6 @@ a{text-decoration: none;color: #fff;}ul,li{margin: 0;padding:0;list-style: none;
 .lesson-Card{	
 	height:274px;
 	border:none;
-	display: flex;
-    justify-content: space-between;
-    align-items: center;	
 }
 .Card{
 	width: 200px;

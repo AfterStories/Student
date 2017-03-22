@@ -247,22 +247,127 @@ a{text-decoration: none;color: #fff;}ul,li{margin: 0;padding:0;list-style: none;
 
 #MYinfo-box{
 	height:262px;
-	display: flex;
-    justify-content: center;
-    align-items: center;	
 }
-#Myinfo-detail{
-	width:150px;
-	height: 200px;
+#Myinfo-detail{	
+	margin-top: 20px;
+	float: left;
+	width:236px;
+	height: 230px;
 	border-right: 1px solid #cfcece;
+
 }
 #Myinfo-HeadImg{
+	position: relative;
+	top: 10px;
+	margin-top: 20px;
+	float: left;
 	width:240px;
-	height: 200px;
+	height: 230px;
 	border-right: 1px solid #cfcece;
 }
-#Myinfo-detail{
-		
+#Myinfo-lesson{
+    margin-top: 20px;
+    float: left;
+    width: 362px;
+    height: 230px;	
+}
+.Info-content{
+
+	display: table;
+	margin:10px auto;
+	text-align: center;
+}
+.detailbox{
+	position: relative;
+	top:30px;
+	width: 85%;
+	margin:0 auto;
+	padding-top: 6px;
+	display: flex;
+    justify-content: space-between;	
+
+}
+.wallet-detailbox{
+	font-size: 18px;
+	position: relative;
+	top:50px;
+	right:80px;
+	width: 60%;
+	margin:0 auto;
+	padding-top: 6px;
+	display: flex;
+    justify-content: space-between;	
+}
+.detail-content-left{
+	text-align: right;
+	width: 100px;
+}
+.detail-content-right{
+		width:100px;
+
+  display: flex;
+  align-items: center;
 }
 
+#AT img,{
+	position: relative;
+	left:6px;
+	width: 20px;
+	height: 20px;
+}
+#MyVIP img{
+	position: relative;
+	left:10px;
+	width: 30px;
+	height: 16px;
+}
+.infobtn{
+	float: right;
+	color:#739eed; 
+	width:88px;
+	height: 25px;
+	border: 2px solid #739eed;
+	border-radius:6px;
+	text-align: center;
+}
+#paybtn{
+	position: relative;
+	right: 40px;
+	top:90px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#paybtn img{
+	margin-right: 4px;
+}
+#mychangebtn{
+	position: relative;
+	right: 30px;
+	top:90px;
+}
+.paperbox{
+	height:45%;
+	width: 100%;
 
+}
+#paperskin{
+	width: 100%;
+	height: 84%;
+}
+#paper1{
+	border-bottom: 1px solid #cfcfcf;
+}
+.papertitle{
+	font-size: 18px;
+	position: relative;
+	top: 20px;
+	left:6px;
+}
+.paper-content{
+	font-size: 14px;
+	color: #7e7e7e;
+	position: relative;
+	top: 30px;
+	left:6px;	
+}

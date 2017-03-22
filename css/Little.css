@@ -11,8 +11,7 @@ a{text-decoration: none;color: #fff;}ul,li{margin: 0;padding:0;list-style: none;
 .clear {clear:both;overflow: hidden;} 
 .content{
 	float: left;
-	box-sizing: border-box;
-	
+	box-sizing: border-box;	
 	background-color: #fff;
 }
 #left{

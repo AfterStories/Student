@@ -32,6 +32,7 @@ a{text-decoration: none;color: #fff;}ul,li{margin: 0;padding:0;list-style: none;
 #remind-title{
 	height:50px;
 	width: 842px;
+	line-height: 50px;
 }
 #live-remind-text{
 	height:50px;
@@ -253,4 +254,9 @@ a{text-decoration: none;color: #fff;}ul,li{margin: 0;padding:0;list-style: none;
 	margin:0 auto;	
 	position: relative;
 	bottom: 40px;
+}
+.baoming{
+	text-align: center;
+    position: relative;
+    top:50px;
 }

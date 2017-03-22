@@ -12,9 +12,25 @@
 			<div id="Myinfo" class=" infobox">
 				<div class="info-title">我的资料</div>
 				<div id="MYinfo-box">
-				<div class="userInfo-box" id="Myinfo-HeadImg"></div>
-				<div class="userInfo-box" id="Myinfo-detail"></div>
-				<div class="userInfo-box" id="Myinfo-lesson"></div>
+					<div class="userInfo-box" id="Myinfo-HeadImg">
+						<img src="../img/MyinfoHeadimg.png" alt="" id="userHeadimg" class="Info-content">
+						<div id="user-name" class="Info-content">Conan</div>
+						<img src="../img/VIPture.png" alt="" id="VIPIcon" class="Info-content">
+					</div>
+						<div class="userInfo-box" id="Myinfo-detail">
+							<div class="detailbox"><div>姓名</div><div id="name" class="detail-content-right">Conan</div></div>
+							<div class="detailbox"><div>生日</div><div id="brth" class="detail-content-right">1993-07-26</div></div>
+							<div class="detailbox"><div>性别</div><div id="sex" class="detail-content-right">女</div></div>
+							<div class="detailbox"><div>国籍</div><div id="motherland" class="detail-content-right">英国</div></div>
+							<div class="detailbox"><div>住址</div><div id="addrs" class="detail-content-right">英国</div></div>
+						</div>
+					<div class="userInfo-box" id="Myinfo-lesson">
+							<div class="detailbox"><div>我的老师</div><div id="Myteacher" class="detail-content-right">Conan</div></div>
+							<div class="detailbox"><div>主修课程</div><div id="mainLesson" class="detail-content-right">1993-07-26</div></div>
+							<div class="detailbox"><div>正在上课</div><div id="lessoning" class="detail-content-right">女</div></div>
+							<div class="detailbox"><div>上课时间</div><div id="classTime" class="detail-content-right">英国</div></div>
+					
+					</div>
 				</div>
 			</div>
 			<div class="clear"></div>
@@ -22,9 +38,24 @@
 			<div class="left-content" id="lesson-Card">
 				<div id="Mywallet" class="infobox" >
 					<div class="info-title">我的钱包</div>
+					<div class="wallet-detailbox"><div class="detail-content-left">AT剩余：</div><div id="AT" clas="detail-content-right">600AT <img src="../img/price.png" alt=""></div></div>	
+					<div class="wallet-detailbox"><div class="detail-content-left">会员：</div><div id="MyVIP" class="detail-content-right">剩余2天 <img src="../img/VIPture.png" alt=""></div></div>
+					<div class="infobtn" id="mychangebtn">我的账单</div>					
+					<div class="infobtn" id="paybtn"><img src="../img/payimg.png" alt="" id="payimg">充值</div>
+					
 				</div>
 			<div id="Mypaper" class="infobox" >
 				<div class="info-title">我的报告</div>
+				<div id="paperskin">
+						<div class="paperbox" id="paper1">
+							<div class="papertitle">Course study report</div>
+							<div class="paper-content">2016-11-09 Chinese hponetic alphabet class 	learing report</div>
+						</div>
+						<div class="paperbox" id="paper2">
+							<div class="papertitle">Course study report</div>
+							<div class="paper-content">2016-11-09 Chinese hponetic alphabet class 	learing report</div>
+						</div>
+					</div>
 			</div>
 			<div class="clear"></div>
 		</div>
@@ -50,8 +81,8 @@
 	<div class="clear"></div>
 </body>
 
-<script type="text/javascript" src="../lib/jquery-3.1.1.js"></script>
-<script>window.jQuery || document.write('<script src="../lib/jquery-3.1.1.js"><\/script>')</script>
+<script type="text/javascript" src="../lib/jquery.js"></script>
+<script>window.jQuery || document.write('<script src="../lib/jquery.js"><\/script>')</script>
 
 <script type="text/javascript" src="../lib/modernizr.js"></script>
 <script type="text/javascript" src="../lib/DatePicker/WdatePicker.js"></script>
