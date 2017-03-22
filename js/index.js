@@ -78,7 +78,7 @@
 	var element = layui.element(); //Tab的切换功能，切换事件监听等，需要依赖element模块
 	var layer = layui.layer;
 //消息弹窗
-function tanchuang(Title_name){
+function tanchuang(Title_name,page){
 
   	  layer.open({
   	    type: 2,
@@ -89,14 +89,16 @@ function tanchuang(Title_name){
   	    maxmin: false, 
   	    scrollbar: false,
   	    area: ['770px', '525px'],
-  	    content: 'http://fly.layui.com/'
+  	    content: page+'.html'
   	  });
   	
 }
 $("#menu li").bind("click",function(){  
 
 	var Li_title = $(this).find("a").html();
-	tanchuang(Li_title);
+	var openpage = $(this).attr('id');
+
+	tanchuang(Li_title,openpage);
  }
  );
 
