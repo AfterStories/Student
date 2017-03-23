@@ -179,6 +179,14 @@
                 autoplayHoverPause:true,
                 stopOnHover:true
               })
+
+$(document).click(function(e) {  
+  
+ window.parent.closetips();
+     e.stopPropagation();  
+});
+				
+
             })
           </script>
 

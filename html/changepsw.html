@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div id="changepasswords">
+		<div class="changebox" id="oldpsw"><div class="changetext">原密码：</div><input type="text" class="password"><div class="clear"></div></div>
+		<div class="changebox" id="newpsw"><div class="changetext">新密码：</div><input type="text" class="password"><div class="clear"></div></div>
+		<div class="changebox" id="turenewpsw"><div class="changetext">确认新密码：</div><input type="text" class="password"><div class="clear"></div></div>
+		
+	</div>
+	
+		<div id="sub">确认</div>
+	
+</body>
+<style>
+	body{
+    height: 300px;
+    margin: 0;
+    padding: 0;
+    width: 500px;
+	}
+	.clear{clear: both;}
+	#changepasswords{
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: space-between;
+    width: 350px;
+    position: relative;
+    top: 35%;
+    left: 35%;
+	
+	}
+	.changetext{
+  float: left;
+    height: 100%;
+    text-align: right;
+    width: 100px;
+    line-height: 30px;
+    color:#747474;
+	}
+	.password{
+    float: right;
+    height: 100%;
+    width: 60%;
+	}
+.changebox{
+    align-self: center;
+    clear: both;
+    height: 30px;
+    width: 100%;
+}
+#sub{
+	background-color: #739eed;
+    border-radius: 6px;
+    bottom: 0;
+    color: #fff;
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    width: 125px;
+    position: relative;
+    left: 336px;
+    top:150px;
+}
+</style>
+</html>

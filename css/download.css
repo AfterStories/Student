@@ -1,6 +1,6 @@
 body{
-	width: 770px;
-	height: 486px;
+	width: 700px;
+	height: 450px;
 }
 #downloadTitle{
 	font-size: 22px;
@@ -58,3 +58,7 @@ body{
 	align-items: center;
 }
 
+#D2code{
+	width:150px;
+	height:150px;
+}

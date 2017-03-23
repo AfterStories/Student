@@ -61,12 +61,13 @@
 		</div>
 		
 			<ul id="menu">
-				<li id="msgcenter" class="menu-li"><img src="../img/msgcenter.png" class="menu-img" alt=""><a href="#">消息中心</a></li>
-				<li id="usercenter" class="menu-li"><img src="../img/usercenter.png" class="menu-img" alt=""><a href="#">会员中心</a></li>
-				<li id="download" class="menu-li"><img src="../img/download.png" class="menu-img" alt=""><a href="#">下载中心</a></li>
-				<li id="system" class="menu-li"><img src="../img/system.png" class="menu-img" alt=""><a href="#">系统菜单</a></li>
+				<li id="msgcenter" class="menu-li menu-open"><img src="../img/msgcenter.png" class="menu-img" alt=""><a href="#">消息中心</a></li>
+				<li id="usercenter" class="menu-li menu-open"><img src="../img/usercenter.png" class="menu-img" alt=""><a href="#">会员中心</a></li>
+				<li id="download" class="menu-li menu-open"><img src="../img/download.png" class="menu-img" alt=""><a href="#">下载中心</a></li>
+				<li id="system" class="menu-li menu-tips"><img src="../img/system.png" class="menu-img" alt=""><a href="#">系统菜单</a></li>
 			</ul>
-		
+		<div id="tips" class="tips" style="display: none;"><div class="inner-menu" id="updata" >软件升级</div><!-- <div class="inner-menu" id="subBUG">提交Bug</div> --><div class="inner-menu" id="changepsw">修改密码</div><!-- <div class="inner-menu" id="loginout">退出登陆</div> --><i class="layui-layer-TipsG layui-layer-TipsR" style="border-bottom-color: rgb(0, 0, 0);"></i></div>
+
 		<iframe src="MyLesson.html" name="LessonFrame" frameborder="0" id="Lessoniframe"  scrolling="no"></iframe>
 	</main>
 
@@ -74,4 +75,9 @@
 <script type="text/javascript" src="../lib/jquery.js"> </script>
 <script src="../lib/layui/layui.js" charset="utf-8"></script>
 <script src="../js/index.js" charset="utf-8"></script>
+<script>
+	function closetips(){
+	$(".tips").hide();  
+}
+</script>
 </html>

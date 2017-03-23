@@ -188,3 +188,30 @@ main{
 	color:#fff;
 	font-size:14px;
 }
+	.tips{
+
+    background-color: #000;
+    border-radius: 2px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 12px;
+    left: 116px;
+    line-height: 22px;
+    min-width: 12px;
+    padding: 5px 10px;
+    position: relative;
+    top: 442px;
+    width: 50px;
+    z-index: 2147483647;
+}
+.layui-layer-TipsG{
+    border-color: transparent;
+    border-style: dashed;
+    border-width: 8px;
+    height: 0;
+    left: -8px;
+    position: absolute;
+    top: 38px;
+    width: 0;
+}
+	

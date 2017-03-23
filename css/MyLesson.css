@@ -85,6 +85,7 @@ a{text-decoration: none;color: #fff;}ul,li{margin: 0;padding:0;list-style: none;
 
 }
 #lesson-Card{	
+	margin-top: 20px;
 	height:308px;
 	border:none;
 	display: flex;

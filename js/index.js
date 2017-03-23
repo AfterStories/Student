@@ -61,6 +61,8 @@
 		$('#infoUl').show().siblings('.layui-tab-title').hide();	
 	});
 
+
+
     $(document).ready(function() {
 
     		$(document.body).css({
@@ -93,14 +95,42 @@ function tanchuang(Title_name,page){
   	  });
   	
 }
-$("#menu li").bind("click",function(){  
+$(function(){ 
+
+
+$(".tips").click(function(e) {  
+    $(this).show();  
+        e.stopPropagation();  
+});  
+$(document).click(function(e) {  
+  
+    $(".tips").hide();  
+      e.stopPropagation();  
+});
+
+
+$("#menu .menu-open").bind("click",function(){  
 
 	var Li_title = $(this).find("a").html();
 	var openpage = $(this).attr('id');
 
 	tanchuang(Li_title,openpage);
- }
- );
+ });
 
-  
-});
+$(".inner-menu").bind("click",function(){  
+
+	var Li_title = $(this).html();
+	var openpage = $(this).attr('id');
+
+	tanchuang(Li_title,openpage);
+ });
+
+$(".menu-tips").bind("click",function(e){  
+$(".tips").toggle();
+  e.stopPropagation();  
+ });
+
+
+}) 
+
+})

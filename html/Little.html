@@ -173,6 +173,13 @@
 <script>
 	$(document).ready(function() {
 
+$(document).click(function(e) {  
+  
+ window.parent.closetips();
+     e.stopPropagation();  
+});
+		
+
 		//灯箱
         var owl = $('.owl-carousel');
           owl.owlCarousel({ 
