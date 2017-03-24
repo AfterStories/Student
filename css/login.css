@@ -126,6 +126,7 @@ header{
 	text-align:center;
 	line-height: 28px;
 	margin:15px auto;
+	cursor: pointer;
 }
 #Copyright{
 	font-size: 14px;

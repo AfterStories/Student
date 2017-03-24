@@ -214,4 +214,6 @@ main{
     top: 38px;
     width: 0;
 }
-	
+.inner-menu{
+	cursor: pointer;
+}

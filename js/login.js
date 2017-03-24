@@ -1,5 +1,7 @@
-var LoginURL = "http://192.168.1.3:8090/AreTalkServer/Web/Login/"
-    
+var LoginURL = "http://211.159.152.210:8188/AreTalkServer/Web/Login/"
+ $("#loginBTN").click(function(){
+Login();
+});   
 
     function Login() {
         var userName = $("#username").val();
@@ -21,16 +23,10 @@ var LoginURL = "http://192.168.1.3:8090/AreTalkServer/Web/Login/"
                         CreateCookie("JSESSIONID", data.data.JSESSIONID, 30);
                         if(data.data.status=="success"){
                             alert("登录成功！");
-                           /* location.href="../index.html?LoginedName="+userName;*/
+                            location.href="../html/index.html?LoginedName="+userName;
                             var isLogin = true;
-
-                           
-
-             var Sessionid = getCookie("JSESSIONID");
-              alert(Sessionid);
-             var Payurl = 'http://192.168.1.3:8090/AreTalkServer/Servlet/AlipayServlet;jsessionid='
-             $("#fofo").attr("action",Payurl+Sessionid);
-
+                            
+              
                         }else{
                             alert("失败，密码错误！");
                              }                        
