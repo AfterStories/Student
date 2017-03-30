@@ -22,6 +22,19 @@
 			position: relative;
 			bottom: -50px;
 		}
+		.buybuybuy{
+    		background-color: #739eed;
+    		border-radius: 6px;
+    		color: #fff;
+    		height: 37px;
+    		line-height: 37px;
+    		margin: auto;
+    		position: relative;
+    		text-align: center;
+    		top: 100px;
+    		width: 125px;
+    		cursor: pointer;
+		}
 		.mask-wrapper:hover .mask-inner {
 		    top: 0;
 		}

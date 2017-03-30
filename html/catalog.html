@@ -1,0 +1,124 @@
+<!-- saved from url=(0016)http://localhost -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>消息中心</title>
+	<link rel="stylesheet" href="../css/catalog.css">
+</head>
+<body>
+<div class="lesson-title-box">
+	<div class="lesson-title">
+		土著语书法研究
+	</div>
+	<div class="lesson-price">
+		300AT
+	</div>
+	<img class="price-icon" src="../img/price.png">
+</div>	
+	<div class="MsgBox">
+		<li class="Msgfrom">第一节<span class="msgTime">2017-3-20</span></li>
+		<div class="Msgcontent">课程描述课程描述课程描述课程描述课程描述课课程描述课程描述课程描述课程描述课程描述课程描述课程描</div>
+		<div class="buy-btn">
+			购买
+		</div>
+	</div>
+	<div class="MsgBox">
+		<li class="Msgfrom">第一节<span class="msgTime">2017-3-20</span></li>
+		<div class="Msgcontent">课程描述课程描述课程描述课程描述课程描述课课程描述课程描述课程描述课程描述课程描述课程描述课程描</div>
+		<div class="buy-btn">
+			购买
+		</div>
+	</div>
+	<div class="MsgBox">
+		<li class="Msgfrom">第一节<span class="msgTime">2017-3-20</span></li>
+		<div class="Msgcontent">课程描述课程描述课程描述课程描述课程描述课课程描述课程描述课程描述课程描述课程描述课程描述课程描</div>
+		<div class="buy-btn">
+			购买
+		</div>
+	</div>
+	<div class="MsgBox">
+		<li class="Msgfrom">第一节<span class="msgTime">2017-3-20</span></li>
+		<div class="Msgcontent">课程描述课程描述课程描述课程描述课程描述课课程描述课程描述课程描述课程描述课程描述课程描述课程描</div>
+		<div class="buy-btn">
+			购买
+		</div>
+	</div>
+	<div class="MsgBox">
+		<li class="Msgfrom">第一节<span class="msgTime">2017-3-20</span></li>
+		<div class="Msgcontent">课程描述课程描述课程描述课程描述课程描述课课程描述课程描述课程描述课程描述课程描述课程描述课程描</div>
+		<div class="buy-btn">
+			购买
+		</div>
+	</div>
+	<div class="MsgBox">
+		<li class="Msgfrom">第一节<span class="msgTime">2017-3-20</span></li>
+		<div class="Msgcontent">课程描述课程描述课程描述课程描述课程描述课课程描述课程描述课程描述课程描述课程描述课程描述课程描</div>
+		<div class="buy-btn">
+			购买
+		</div>
+	</div>
+	<div class="MsgBox">
+		<li class="Msgfrom">第一节<span class="msgTime">2017-3-20</span></li>
+		<div class="Msgcontent">课程描述课程描述课程描述课程描述课程描述课课程描述课程描述课程描述课程描述课程描述课程描述课程描</div>
+		<div class="buy-btn">
+			购买
+		</div>
+	</div>
+	<div class="MsgBox">
+		<li class="Msgfrom">第一节<span class="msgTime">2017-3-20</span></li>
+		<div class="Msgcontent">课程描述课程描述课程描述课程描述课程描述课课程描述课程描述课程描述课程描述课程描述课程描述课程描</div>
+		<div class="buy-btn">
+			购买
+		</div>
+	</div>
+	<div class="MsgBox">
+		<li class="Msgfrom">第一节<span class="msgTime">2017-3-20</span></li>
+		<div class="Msgcontent">课程描述课程描述课程描述课程描述课程描述课课程描述课程描述课程描述课程描述课程描述课程描述课程描</div>
+		<div class="buy-btn">
+			购买
+		</div>
+	</div>								
+
+
+
+<script type="text/javascript" src="../lib/jquery.js"></script>	
+
+<script type="text/javascript">
+
+    $(document).ready(function() {
+
+    		$(document.body).css({
+				"overflow-x":"hidden"
+				
+			});
+
+    });
+/*var lessonId = parent.document.getElementById("layui-layer-iframe1").contentWindow.location.href;
+*/
+function GetQueryString(name)
+{
+     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+     var r = window.location.search.substr(1).match(reg);
+     if(r!=null)return  unescape(r[2]); return null;
+}
+console.log(GetQueryString("lessonId"))
+
+var myDate = new Date();
+//获取当前年
+var year=myDate.getFullYear();
+//获取当前月
+var month=myDate.getMonth()+1;
+//获取当前日
+var date=myDate.getDate(); 
+var h=myDate.getHours();       //获取当前小时数(0-23)
+var m=myDate.getMinutes();     //获取当前分钟数(0-59)
+var s=myDate.getSeconds();  
+
+var nowNY=year+'-'+month+"-"+date;
+
+	$(".msgTime").html(nowNY)
+</script>
+
+</body>
+</html>

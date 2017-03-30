@@ -1,11 +1,19 @@
 body,html{
 	height:598px;
-	width:1148px;
-	max-width: 1148px;
-	max-height: 598px;
+	width:1166px;
+
 	margin: 0;
 	padding:0;
 	font-family: "Microsoft YaHei" ! important;
+}
+#left{
+	width: 884px;
+	height: 610px;
+
+}
+#right{
+	width:282px;
+	height:610px;
 }
 a{text-decoration: none;color: #fff;}ul,li{margin: 0;padding:0;list-style: none;}
 .clear {clear:both;overflow: hidden;} 
@@ -15,15 +23,7 @@ a{text-decoration: none;color: #fff;}ul,li{margin: 0;padding:0;list-style: none;
 	
 	background-color: #fff;
 }
-#left{
-	width: 866px;
-	height: 598px;
 
-}
-#right{
-	width:282px;
-	height:598px;
-}
 .left-content{
 	width: 842px;
 	margin-left:22px;
@@ -87,10 +87,7 @@ a{text-decoration: none;color: #fff;}ul,li{margin: 0;padding:0;list-style: none;
 #lesson-Card{	
 	margin-top: 20px;
 	height:308px;
-	border:none;
-	display: flex;
-    justify-content: space-between;
-    align-items: center;	
+	border:none;	
 }
 .Card{
 	width: 200px;
@@ -144,26 +141,34 @@ a{text-decoration: none;color: #fff;}ul,li{margin: 0;padding:0;list-style: none;
 
 }
 #remind-lesson-info{
-	width: 180px;
+	width: 200px;
 	height: 22px;
 	margin-left: 20px;	
 	position: relative;
 	top:100px;
 	font-size: 16px;
-	display: flex;
-    justify-content:space-between;
-    align-items: center;
     color: #747474;
 	line-height: 22px;
 	float: left;
 }
+#les-dur{
+	width: 70px;
+	padding-left:4px; 
+	float: left;
+}
+#les-num{
+	width: 70px;
+	padding-left:4px; 
+	float: left;
+}
 #remind-lesson-info img{
-	margin-right: 4px;
+	float: left;
+
 }
 .card-pic{
 	width: 199px;
 	height: 132px;
-	background-image: url('../img/card.png');
+	
 }
 .card-text{
 	font-size: 14px;
@@ -178,7 +183,7 @@ a{text-decoration: none;color: #fff;}ul,li{margin: 0;padding:0;list-style: none;
 	height: 26px;
 	float: left;
 	position: relative;
-	left: 20px;
+	left:8px;
 	bottom: -38px;	
 }
 .card-info img{
@@ -187,8 +192,8 @@ a{text-decoration: none;color: #fff;}ul,li{margin: 0;padding:0;list-style: none;
 .card-teacherImg{
 	float: right;
 	position: relative;
-	right: 10px;
-	bottom: -30px;
+	right: 25px;
+	bottom: -28px;
 	width:40px;
 	height:40px;
 	border-radius:40px;
@@ -196,36 +201,37 @@ a{text-decoration: none;color: #fff;}ul,li{margin: 0;padding:0;list-style: none;
 .rightbox{
 	width: 240px;
 	border: 1px solid #bcbcbc;
-	border-radius:6px;
 	margin:14px auto;
+	  border-radius: 6px;
 }
 #CUS-service{
+	border-radius: 6px;
 	
 	height: 192px;
 }
 #consultant{
+	border-radius: 6px;
 	
 	height: 93px;
 }
 #calendar{
+	border-radius: 6px;
 	
 	height: 242px;
 }
 .today{
-	margin-left: 35px;
 	cursor: pointer;
 }
-.rightbox-title{
-	display: flex;
-    justify-content:center;
-    align-items: center;	
+.rightbox-title{	
 	width: 240px;
 	height: 29px;
 	background-color: #f8f8f8;
 	border-bottom: 1px solid #bcbcbc;
 	color: #739eed;
-	font-size: 14px;
-	border-radius: 6px 6px 0px 0px ;
+	font-size: 14px;	
+	text-align: center;	
+	line-height: 29px;
+	border-radius: 6px 6px 0 0;
 }
 #CUS-service-img{
 	border-radius: 8px; 
@@ -243,9 +249,6 @@ a{text-decoration: none;color: #fff;}ul,li{margin: 0;padding:0;list-style: none;
 
 }
 #CUS-service-btn{
-	display: flex;
-    justify-content:center;
-    align-items: center;
 	font-size:16px;	
 	width:180px;
 	height: 28px;
@@ -254,7 +257,8 @@ a{text-decoration: none;color: #fff;}ul,li{margin: 0;padding:0;list-style: none;
 			
 	margin:0 auto;	
 	position: relative;
-	bottom: 40px;
+	bottom: 10px;
+	left:40px;
 }
 .baoming{
 	text-align: center;

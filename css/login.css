@@ -15,11 +15,7 @@ header{
 	
 	width:1264px;
 	height: 76px;
-	background-color: #fff;	
-	display: flex;
-	display: -webkit-flex;
-	justify-content: space-between;
-	 align-items: center;
+	background-color: #fff;
 	}
 #logo{
 	width: 140px;
@@ -28,14 +24,14 @@ header{
 	position: relative;
 	left: 20px;
 	background-image: url("../img/logo.png");
+	top: 25%;
 }
 #RInfo{
 	width: 240px;
 	height: 20px;	
 	font-size: 18px;
 	float: right;
-	position: relative;
-	right: 20px;
+	line-height: 76px;
 }	
 #main{
 	widows: 100%;
@@ -94,19 +90,19 @@ header{
 
 .loginImgBox{
 	width:30px;
-	height: 32px;
+	height: 30px;
 	float: left;
 
-	border: 1px solid #cacaca; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	border: 1px solid #cacaca;
 
 }
 
 .loginImg{
 	width:15px;
 	height:22px;
+	position:relative;
+	top:12%;
+	left:20%;
 }
 #username{
 	margin: 20px 0; 
@@ -115,6 +111,8 @@ header{
 	
     position: absolute;
     right: 22px;
+	
+    bottom: 90px;;
 
 }
 #loginBTN{
@@ -125,8 +123,11 @@ header{
 	height: 28px;
 	text-align:center;
 	line-height: 28px;
-	margin:15px auto;
 	cursor: pointer;
+	float:left;
+	position:relative;
+	left:24px;
+	top:20px;
 }
 #Copyright{
 	font-size: 14px;

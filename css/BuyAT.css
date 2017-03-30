@@ -1,17 +1,20 @@
 body{
 	margin:0;
 	padding: 0;
+	font-family: "Arial Unicode MS";
+
 }
 
 .clear{
 	clear: both;
+	overflow: hidden;
 }
 #BuyTitle{
 	width:100%;
 	height: 42px;
-	line-height:42px;
 	border-top:1px solid #e1e1e1;
 	border-bottom:1px solid #e1e1e1;
+	line-height:42px;
 }
 
 #buyname{
@@ -28,29 +31,28 @@ body{
 #AT{
 	width: 100%;	
 position: relative;
-top:50px;	
+	vertical-align: middle;
+	top: 7%;	
 }
 #AT1{
-	margin:10px 0;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	margin:10px auto;
+	width: 90%;
+	overflow:hidden;
 	
 }
 #AT2{
-	margin:10px 0;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;		
+	margin:10px auto;
+	width: 90%;
+	overflow:hidden;		
 }
 #BuyChoose{
 	width:100%;
-	height:280px;
+	height:200px;
 	background-color: #e8e8e8;
 
-	border-bottom:1px solid #e1e1e1;		
+	border-bottom:1px solid #e1e1e1;
+	position:relative;
+	top:-10px		
 }
 .VIPTime{
 	width:148px;
@@ -62,6 +64,7 @@ top:50px;
 	color:#6999f0;
 	font-size:20px;
 	text-align:center;
+	float:left;
 }
 .timetext{
 	position:relative;
@@ -72,28 +75,34 @@ top:50px;
 	top:16px;	
 	font-size: 16px;
 }
-
+#Box{
+	margin: 0 auto;
+    width: 620px;
+    height: 100%;
+}
 #BuyTypeBox{
 	width:100%;
-	height:92px;
-	display: flex;
-	justify-content:center;
-	align-items: center;	
+	height:70px;
 	border-bottom:1px solid #e1e1e1;
+	position:relative;
+	top:-10px;
 }
 .BuyType{
 	width: 200px;
 	height: 100%;
-	display: flex;
-	justify-content:center;
-	align-items: center;	
+	float: left;	
 
 }
 .BuyTypeIMG{
-	width: 20px;
-	height: 20px;
+	    width: 20px;
+    height: 20px;
+    position: relative;
+    top: 4px;
 }
-
+.BuyType img{
+position: relative;
+    top: 14px;
+}
 #BuysubmitBtn{
 	background-color: #ff5252;
 	color: #fff;

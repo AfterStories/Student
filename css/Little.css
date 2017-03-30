@@ -1,12 +1,21 @@
 body,html{
 	height:598px;
-	width:1148px;
-	max-width: 1148px;
-	max-height: 598px;
+	width:1166px;
+
 	margin: 0;
 	padding:0;
 	font-family: "Microsoft YaHei" ! important;
 }
+#left{
+	width: 884px;
+	height: 610px;
+
+}
+#right{
+	width:282px;
+	height:610px;
+}
+
 a{text-decoration: none;color: #fff;}ul,li{margin: 0;padding:0;list-style: none;}
 .clear {clear:both;overflow: hidden;} 
 .content{
@@ -14,15 +23,7 @@ a{text-decoration: none;color: #fff;}ul,li{margin: 0;padding:0;list-style: none;
 	box-sizing: border-box;	
 	background-color: #fff;
 }
-#left{
-	width: 866px;
-	height: 598px;
 
-}
-#right{
-	width:282px;
-	height:598px;
-}
 .left-content{
 	width: 842px;
 	margin-left:22px;
@@ -91,9 +92,8 @@ a{text-decoration: none;color: #fff;}ul,li{margin: 0;padding:0;list-style: none;
 #lesson-Card{	
 	height:308px;
 	border:none;
-	display: flex;
-    justify-content: space-between;
-    align-items: center;	
+	position: relative;
+	top: 20px;
 }
 .Card{
 	width: 200px;
@@ -101,6 +101,10 @@ a{text-decoration: none;color: #fff;}ul,li{margin: 0;padding:0;list-style: none;
 	border: 1px solid #bcbcbc;
 	float: left;
 
+}
+.card-pic img{
+	width: 100%;
+	height: 100%
 }
 #teacherHead{
 	float:left;
@@ -150,51 +154,61 @@ a{text-decoration: none;color: #fff;}ul,li{margin: 0;padding:0;list-style: none;
 
 }
 #remind-lesson-info{
-	width: 180px;
-	height: 22px;
-	margin-left: 20px;	
-	position: relative;
-	top:100px;
-	font-size: 16px;
-	display: flex;
-    justify-content:space-between;
-    align-items: center;
+    width: 200px;
+    height: 22px;
+    margin-left: 20px;
+    position: relative;
+    top: 100px;
+    font-size: 16px;
     color: #747474;
-	line-height: 22px;
-	float: left;
+    line-height: 22px;
+    float: left;
 }
 #remind-lesson-info img{
-	margin-right: 4px;
+    float: left;
 }
 .card-pic{
 	width: 199px;
 	height: 132px;
 	background-image: url('../img/card.png');
 }
+#les-dur{
+	width: 70px;
+	padding-left:4px; 
+	float: left;
+}
+#les-num{
+	width: 70px;
+	padding-left:4px; 
+	float: left;
+}
 .card-text{
 	font-size: 14px;
 	padding: 2px 4px; 
 }
 .card-info{
-	color:#747474;
-	display: flex;
-    justify-content:center;
-    align-items: center;	
+
+	color:#747474;	
 	width:115px;
 	height: 26px;
 	float: left;
 	position: relative;
-	left: 20px;
-	bottom: -38px;	
+	left:10px;
+	bottom: -58px;	
 }
 .card-info img{
 	margin-right: 4px;
+	float: left;
+}
+.card-info span{
+	margin-right: 4px;
+	float: left;
 }
 .card-teacherImg{
 	float: right;
 	position: relative;
-	right: 10px;
-	bottom: -30px;
+	right: 20px;
+	bottom: -50px;
 	width:40px;
 	height:40px;
 	border-radius:40px;
@@ -221,17 +235,16 @@ a{text-decoration: none;color: #fff;}ul,li{margin: 0;padding:0;list-style: none;
 	margin-left: 35px;
 	cursor: pointer;
 }
-.rightbox-title{
-	display: flex;
-    justify-content:center;
-    align-items: center;	
-	width: 240px;
-	height: 29px;
-	background-color: #f8f8f8;
-	border-bottom: 1px solid #bcbcbc;
-	color: #739eed;
-	font-size: 14px;
-	border-radius: 6px 6px 0px 0px ;
+.rightbox-title{	
+    width: 240px;
+    height: 29px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #bcbcbc;
+    color: #739eed;
+    font-size: 14px;
+    text-align: center;
+    line-height: 29px;
+    border-radius: 6px 6px 0 0;
 }
 #CUS-service-img{
 	border-radius: 8px; 

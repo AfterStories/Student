@@ -12,7 +12,16 @@
 .zAccountPlanRinner{margin-right:20px;}
 .zAccountPlanR .week{  font-size:14px;line-height:2;}
 .zAccountPlanR  .date{font-size:18px;line-height:30px;padding:0 5px 10px 5px;}
-.today{font-size:16px;color:#fb653b;padding:8px 0;text-align:left;}
+.today{   
+ font-size: 16px;
+    color: #fb653b;
+    padding: 8px 0;
+    text-align: right;
+    position: relative;
+    top: -38px;
+    right: 4px;
+ 
+}
 .zAccountPlanR  .detail{font-size:16px;}
 .zAccountPlanR  .day{font-size:48px;color:#fb653b;line-height:84px;padding-bottom:20px;}
 .zAccountPlanR  .detail{color:#fb653b;}

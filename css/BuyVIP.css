@@ -29,9 +29,6 @@ body{
 	width:100%;
 	height:154px;
 	background-color: #e8e8e8;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	border-bottom:1px solid #e1e1e1;		
 }
 .VIPTime{
@@ -44,10 +41,21 @@ body{
 	color:#6999f0;
 	font-size:20px;
 	text-align:center;
+	float:left;
 }
 .timetext{
 	position:relative;
 	top:10px;
+}
+#chooseBox{
+	margin:0 auto;
+	overflow: hidden;
+	clear: both;
+	width:97%;
+	position:relative;
+	top:25%;
+	padding-left:40px;
+	font-family:"Arial Unicode MS";
 }
 .BuyPrice{
 	position:relative;
@@ -57,25 +65,33 @@ body{
 
 #BuyTypeBox{
 	width:100%;
-	height:92px;
-	display: flex;
-	justify-content:center;
-	align-items: center;	
+	height:92px;	
 	border-bottom:1px solid #e1e1e1;
 }
 .BuyType{
 	width: 200px;
 	height: 100%;
-	display: flex;
-	justify-content:center;
-	align-items: center;	
+	float: left;	
 
+}
+#juzhongbox{
+	margin:0 auto;
+	width:620px;
+	height:100%;
 }
 .BuyTypeIMG{
 	width: 20px;
 	height: 20px;
+	position: relative;
+	top: 15px;
 }
-
+.choosetype{
+	height: 100%;
+}
+.choosetype img{
+	position: relative;
+	top:24px;
+}
 #BuysubmitBtn{
 	background-color: #ff5252;
 	color: #fff;

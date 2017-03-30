@@ -1,6 +1,7 @@
 body{
 	width: 700px;
 	height: 450px;
+		font-family: "Microsoft YaHei" ! important;
 }
 #downloadTitle{
 	font-size: 22px;
@@ -11,9 +12,9 @@ body{
 	height: 180px;
 }
 #downloadType{
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	clear: both;
+	overflow: hidden;
+	padding-left: 10%;
 }
 .TypeBtn{
 	width: 160px;
@@ -21,12 +22,11 @@ body{
 	border: 1px solid #d2d2d2;
 	border-radius: 6px;
 	margin:10px 10px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor:pointer;	
+	cursor:pointer;
+	float: left;	
 
 }
+
 .TypeBtnS{
 	color: #fff;
 	background-color: #6999f0;
@@ -35,13 +35,27 @@ body{
 	border: 1px solid #d2d2d2;
 	border-radius: 6px;
 	margin:10px 10px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	cursor:pointer;	
+	float: left;
+	cursor: pointer;	
 }
 .TypeBtn img,.TypeBtnS img{
 	margin-right: 8px;
+	text-align: center;
+	position: relative;
+	left: 25%;
+	-webkit-transform: translate(-50%,-50%);
+	-ms-transform: translate(-50%,-50%);
+	transform: translate(-50%,-50%);
+	top: 50%;
+	float: left;
+	
+}
+.dlbox{
+	float: left;
+	position: relative;
+	top: 12px;
+	left: 30px;
+
 }
 .ContentDetail{
 	color: #747474;
@@ -53,9 +67,7 @@ body{
 }
 #imgbox{
 	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	text-align: center;
 }
 
 #D2code{

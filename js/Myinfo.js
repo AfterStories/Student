@@ -25,7 +25,7 @@ $(document).ready(function() {
 
 //获取国家列表
 var countryArry =[];
-/*getcountry();*/
+getcountry();
  getMyWallet();
 
 function getcountry(){
@@ -87,8 +87,8 @@ function getMyWallet(){
             /*生日*/$('#brth').html((data.data.userInfo.user.birthday).slice(0,10));  
         /*注册时间*/$('#registryTime').html((data.data.userInfo.user.registryTime).slice(0,10));
 
-            /*母语*//*$('#motherland').html(countryArry[data.data.userInfo.user.motherlandId].countryNameCn);*/
-            /*国家*//*$('#country').html(countryArry[data.data.userInfo.user.countryId].countryNameCn);*/
+            /*母语*/$('#motherland').html(countryArry[data.data.userInfo.user.motherlandId].countryNameCn);
+            /*国家*/$('#country').html(countryArry[data.data.userInfo.user.countryId].countryNameCn);
             /*电话*/$('#phonenum').html(data.data.userInfo.user.phoneNumber);
             /*邮件*/$('#Email').html(data.data.userInfo.user.email);
                		
@@ -115,8 +115,67 @@ function getMyWallet(){
 
                   		},
               error:function(data,a,b,c) {
-                alert("登录超时请重新登陆")
+                /*alert("登录超时请重新登陆")*/
                   }
                         });
 
 });
+
+
+  layui.use(['jquery','layer','element'],function(){
+  var element = layui.element(); //Tab的切换功能，切换事件监听等，需要依赖element模块
+  var layer = layui.layer;
+//消息弹窗
+function tanchuang(Title_name,page){
+
+      layer.open({
+        type: 2,
+        title: Title_name,
+        shadeClose: true,
+        resize:false,
+        shade: false,
+        maxmin: false, 
+        scrollbar: false,
+        area: ['770px', '525px'],
+        content: page+'.html'
+      });
+    
+}
+
+$(function(){ 
+$("#editInfo").click(function() {  
+      layer.open({
+        type: 2,
+        title: "编辑资料",
+        shadeClose: true,
+        resize:false,
+        shade: false,
+        maxmin: false, 
+        scrollbar: false,
+        area: ['1146px', '600px'],
+        content: 'editInfo.html'
+      });
+});  
+$("#mychangebtn").click(function() {  
+  tanchuang("我的账单","bill")
+});  
+$("#paybtn").click(function() {  
+  tanchuang("会员中心","usercenter")
+});  
+
+
+
+$(".tips").click(function(e) {  
+    $(this).show();  
+        e.stopPropagation();  
+});  
+$(document).click(function(e) {  
+  
+    $(".tips").hide();  
+      e.stopPropagation();  
+});
+
+
+}) 
+
+})

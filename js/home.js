@@ -1,3 +1,4 @@
+
 function getCookie(c_name) {
   var c_value = document.cookie;
   var c_start = c_value.indexOf(" " + c_name + "=");
@@ -101,16 +102,16 @@ function getCookie(c_name) {
                 data: {},
                 success: function (data) {
                 	if (data.data==undefined) {
-                	 		alert("登陆超时，请重新登陆");
-               				location.href="../html/login.html";
+                	 		/*alert("登陆超时，请重新登陆");*/
+               				/*location.href="../html/login.html";*/
                 };
                 $('#Head img').attr('src','http://211.159.152.210:8188'+data.data.userInfo.avatar);
                 $('#username').html(data.data.userInfo.user.nickname);
 
                 },
                 error: function () {
-                        	alert("登陆超时，请重新登陆");
-                        	location.href="../html/login.html";
+                        	/*alert("登陆超时，请重新登陆");*/
+                        	/*location.href="../html/login.html";*/
                          }
                 });
                      
