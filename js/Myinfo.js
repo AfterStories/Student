@@ -60,11 +60,11 @@ function getMyWallet(){
             url: 'http://211.159.152.210:8188/AreTalkServer/Web/Api/getMyWallet.action;jsessionid='+Sessionid,
             success:function(data) {
              		$("#AT").html(data.data.amountInfo.balance+"AT");
-             		if (data.data.VipStatus == null) {
-             			$("#MyVIP").html("未开通VIP会员");
+             		if (data.data.VipStatus.endTime == null) {
+             			$("#MyVIP").html("未开通VIP");
              			$("#IFVIP").attr('src','../img/VIPfalse.png');
              		}else{
-             			$("#MyVIP").text("2016-09-09"/*data.data.VipStatus*/);
+             			$("#MyVIP").text(data.data.VipStatus.endTime);
              			$("#IFVIP").attr('src','../img/VIPture.png');
              		}
               },

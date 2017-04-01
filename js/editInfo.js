@@ -1,3 +1,9 @@
+layui.use('layer', function(){
+  var layer = layui.layer;      
+
+});
+
+
   function getCookie(c_name) {
   var c_value = document.cookie;
   var c_start = c_value.indexOf(" " + c_name + "=");
@@ -23,35 +29,38 @@ var Sessionid = getCookie("JSESSIONID");
 
 
 function save() {
+      var updata = {}
+      var nickname= $("#nameinput").val();
+      var brth= $("#brthinput").val();      
+      var sex = $("input[type='radio']:checked").val();
 
-        var userName = $("#username").val();
-        TheuserName = userName;
-        var password = hex_md5($("#Password").val());
-        Thepassword = password;
-    
-    if (!userName || !password) {
-            alert('请输入您的用户名与密码。');
-            return false;
-        }else{
+    if (nickname!=undefined) {
+         updata.nickname = nickname;
+     }
+    if(brth!=undefined){
+        updata.sex= sex;          
+     }
+     if(sex!=undefined){
+        updata.birthday= brth;          
+     }
 
-                $.ajax({
-                    type: "GET",
-                    url: LoginURL+"login.action?userName="+userName+"&password="+password+"&userType=1",
-                    data: {},
-                    crossDomain: true, 
-                    dataType:'jsonp',
-                    jsonp:"callback",
-                    jsonpCallback:'loginHandler',
-                    success: function (data) {                        
-                       
-                      
-                        },
-                    error: function (a,b,c) {
-                        alert(JSON.stringify(a));alert(b);alert(c);
-                         }
-                    });
+    alert(JSON.stringify(updata));
 
-            }   
+
+   $.ajax({
+       type: "GET",
+       url: 'http://211.159.152.210:8188/AreTalkServer/Web/Api/updateUserInfo.action;jsessionid='+Sessionid,
+       data: updata,
+       success: function (data) {  
+       alert("成功")                      
+             layer.msg('保存成功'); 
+         
+           },
+       error: function (a,b,c) {
+           /*alert("登陆超时，请重新登陆");*/
+            }
+       });
+          
 }
 
 

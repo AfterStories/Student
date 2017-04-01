@@ -127,6 +127,7 @@ function getCookie(c_name) {
 function tanchuang(Title_name,page){
 
   	  layer.open({
+  	  	/*move: false,*/
   	    type: 2,
   	    title: Title_name,
   	    shadeClose: true,

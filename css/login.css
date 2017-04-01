@@ -1,11 +1,16 @@
 
 body,html,ul,li{
-	max-width: 1264px;
-	max-height: 682px;
 	margin: 0;
 	padding:0;
 	font-family: "Microsoft YaHei" ! important;
 }
+ body,html{
+ 	width: 1282px;
+    height: 727px;
+    margin: 0;
+    padding: 0;
+
+ 	} 
 a{text-decoration: none;color: #000;}
 .clear {
 	clear:both;
@@ -13,7 +18,7 @@ a{text-decoration: none;color: #000;}
 } 
 header{
 	
-	width:1264px;
+	width:1282px;
 	height: 76px;
 	background-color: #fff;
 	}
@@ -34,9 +39,11 @@ header{
 	line-height: 76px;
 }	
 #main{
-	widows: 100%;
+
+	widows: 1282px;
 	height: 379px;
 	background-image: url("../img/background.png");
+	background-repeat: no-repeat;
 }
 #imgICON{
 	float: left;
@@ -130,15 +137,16 @@ header{
 	top:20px;
 }
 #Copyright{
-	font-size: 14px;
+	font-size: 15px;
 	line-height: 12px;
 	margin-top: 6px;
 
 }
 #about{
-	width:372px;
+	width:400px;
 	margin:0 auto;
 	overflow: hidden;
+	height: 18px;
 }
 #about>li{
 	padding:0 4px;
@@ -155,7 +163,7 @@ header{
 
 }
 #CopyInfo{
-	margin-top: 6px;
+	margin-top: 10px;
 	text-align: center;
 }
 

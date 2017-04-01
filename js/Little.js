@@ -46,27 +46,43 @@ var Sessionid = getCookie("JSESSIONID");
 
 
 
+ function getLocalTime(i,day) {
+        //参数i为时区值数字，比如北京为东八区则i为8,西5为-5
+        if (typeof i !== 'number') return;
+        var d = new Date();
+        //得到1970年一月一日到现在的秒数
+        var len = d.getTime()+(day*24*3600000);
+        //本地时间与GMT时间的时间偏移差
+        var offset = d.getTimezoneOffset() * 60000;
+        //得到现在的格林尼治时间
+        var utcTime = len + offset;
 
+         var sendTime = new Date(utcTime + 3600000 * i);
 
-var myDate = new Date();
-//获取当前年
-var year=myDate.getFullYear();
-//获取当前月
-var month=myDate.getMonth()+1;
-//获取当前日
-var date=myDate.getDate(); 
-var h=myDate.getHours();       //获取当前小时数(0-23)
-var m=myDate.getMinutes();     //获取当前分钟数(0-59)
-var s=myDate.getSeconds();  
+         //获取当前年
+        var year=sendTime.getFullYear();
+        //获取当前月
+        var month=sendTime.getMonth()+1;
+        //获取当前日
+        var riqi=sendTime.getDate(); 
+        
+        var h=sendTime.getHours();     //获取小时数(0-23)
+        var m=sendTime.getMinutes();   //获取分钟数(0-59)
+        var s=sendTime.getSeconds();   //获取秒数(0-59)
+        if (m<10) {
+            m = "0"+m
+        }
+        if (s<10) {
+           s = "0"+s
+        }
+        var NY=year+'-'+month+"-";
+        var ZTime = " "+h+":"+m+":"+s;
+        var NowRiQi = NY+riqi+ZTime;
 
-var nowNY=year+'-'+month+"-";
-var riqi = date;
-var ZTime = " 00:00:00";
+        return NowRiQi
 
-var NowRiQi = nowNY+(riqi+1)+ZTime;
+    }
 
-
-console.log(NowRiQi);
 
 
 function GetLesson(minD,maxD){
@@ -119,64 +135,29 @@ function GetLesson(minD,maxD){
 
 
 
-/*$(document).ready(function() {
-  var todaystar = nowNY+riqi+ZTime;
-  var todayend = nowNY+(riqi+4)+ZTime;
-  GetLesson(todaystar,todayend);
+$(document).ready(function() {
+  var star = getLocalTime(8,0);
+  var end =  getLocalTime(8,1);
+/*  GetLesson(star,end);*/
+
+  console.log(star);
+  console.log(end);
+
 
 })
-*/
-
-$("#today").click(function(){
-  var star = nowNY+riqi+ZTime;
-  var end = nowNY+(riqi+1)+ZTime;
-  GetLesson(star,end);
-
-});
 
 
+$(".live-remind-text").click(function(){
+  var day  = $(this).attr("DayNo");/*attr("DayNo");*/
+  var nextday = parseInt(day)+1;
+  var star = getLocalTime(8,day);
+  var end =  getLocalTime(8,nextday);
+/*  GetLesson(star,end);*/
+  console.log(day);
+  console.log(nextday);
+  console.log(star);
+  console.log(end);
 
-$("#tomor").click(function(){
-  var star = nowNY+(riqi+1)+ZTime;
-  var end = nowNY+(riqi+2)+ZTime;
-
-  GetLesson(star,end);
-});
-
-
-$("#after").click(function(){
-  var star = nowNY+(riqi+2)+ZTime;
-  var end = nowNY+(riqi+3)+ZTime;
-
-  GetLesson(star,end);
-});
-
-$("#4Day").click(function(){
-  var star = nowNY+(riqi+3)+ZTime;
-  var end = nowNY+(riqi+4)+ZTime;
-
-  GetLesson(star,end);
-});
-
-$("#5Day").click(function(){
-  var star = nowNY+(riqi+4)+ZTime;
-  var end = nowNY+(riqi+5)+ZTime;
-
-  GetLesson(star,end);
-});
-
-$("#6Day").click(function(){
-  var star = nowNY+(riqi+5)+ZTime;
-  var end = nowNY+(riqi+6)+ZTime;
-
-  GetLesson(star,end);
-});
-
-$("#7Day").click(function(){
-  var star = nowNY+(riqi+6)+ZTime;
-  var end = nowNY+(riqi+7)+ZTime;
-
-  GetLesson(star,end);
 });
 
 

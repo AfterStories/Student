@@ -30,18 +30,14 @@ a{text-decoration: none;color: #fff;}ul,li{margin: 0;padding:0;list-style: none;
 	border-bottom: 1px solid #bcbcbc;
 }
 #remind-title{
-	height:30px;
+	height:50px;
 	width: 842px;
+	line-height: 50px;
 }
-.live-remind-text{
-	border-right: 1px solid #747474;
-	padding:0 20px;
-	color: #747474;
-	height:30px;
+#live-remind-text{
+	height:50px;
 	font-size: 16px;
-	line-height: 30px;
-	text-decoration: none;
-	cursor: hand;
+	line-height: 50px;
 
 }
 #remind-lesson{	
@@ -88,12 +84,10 @@ a{text-decoration: none;color: #fff;}ul,li{margin: 0;padding:0;list-style: none;
 
 
 }
-.lesson-Card{	
-	height:274px;
-	border:none;
-	display: flex;
-    justify-content: space-between;
-    align-items: center;	
+#lesson-Card{	
+	margin-top: 20px;
+	height:308px;
+	border:none;	
 }
 .Card{
 	width: 200px;
@@ -147,88 +141,109 @@ a{text-decoration: none;color: #fff;}ul,li{margin: 0;padding:0;list-style: none;
 
 }
 #remind-lesson-info{
-	width: 180px;
+	width: 200px;
 	height: 22px;
 	margin-left: 20px;	
 	position: relative;
 	top:100px;
 	font-size: 16px;
-	display: flex;
-    justify-content:space-between;
-    align-items: center;
     color: #747474;
 	line-height: 22px;
 	float: left;
 }
+#les-dur{
+	width: 70px;
+	padding-left:4px; 
+	float: left;
+}
+#les-num{
+	width: 70px;
+	padding-left:4px; 
+	float: left;
+}
 #remind-lesson-info img{
-	margin-right: 4px;
+	float: left;
+
 }
 .card-pic{
 	width: 199px;
 	height: 132px;
-	background-image: url('../img/card.png');
+	
+}
+.card-pic img{
+	width: 100%;
+	height: 100%
 }
 .card-text{
 	font-size: 14px;
 	padding: 2px 4px; 
+	height: 40px;
 }
 .card-info{
-	color:#747474;
-	display: flex;
-    justify-content:center;
-    align-items: center;	
-	width:115px;
-	height: 26px;
-	float: left;
-	position: relative;
-	left: 20px;
-	bottom: -38px;	
+    color: #747474;
+    width: 50%;
+    height: 22px;
+    float: left;
+    position: relative;
+    left: 30px;
+    bottom: -20px;	
 }
 .card-info img{
-	margin-right: 4px;
+    margin: 0 4px;
+    float: left;
+    position: relative;
+    left: -30px;
+    top: 32px;
+}
+.card-info span{
+    margin-right: 4px;
+    float: left;
+    font-size: 15px;
 }
 .card-teacherImg{
-	float: right;
-	position: relative;
-	right: 10px;
-	bottom: -30px;
-	width:40px;
-	height:40px;
-	border-radius:40px;
+    float: right;
+    position: relative;
+    right: 20px;
+    bottom: -38px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
 }
+
 .rightbox{
 	width: 240px;
 	border: 1px solid #bcbcbc;
-	border-radius:6px;
 	margin:14px auto;
+	  border-radius: 6px;
 }
 #CUS-service{
+	border-radius: 6px;
 	
 	height: 192px;
 }
 #consultant{
+	border-radius: 6px;
 	
 	height: 93px;
 }
 #calendar{
+	border-radius: 6px;
 	
 	height: 242px;
 }
 .today{
-	margin-left: 35px;
 	cursor: pointer;
 }
-.rightbox-title{
-	display: flex;
-    justify-content:center;
-    align-items: center;	
+.rightbox-title{	
 	width: 240px;
 	height: 29px;
 	background-color: #f8f8f8;
 	border-bottom: 1px solid #bcbcbc;
 	color: #739eed;
-	font-size: 14px;
-	border-radius: 6px 6px 0px 0px ;
+	font-size: 14px;	
+	text-align: center;	
+	line-height: 29px;
+	border-radius: 6px 6px 0 0;
 }
 #CUS-service-img{
 	border-radius: 8px; 
@@ -246,9 +261,6 @@ a{text-decoration: none;color: #fff;}ul,li{margin: 0;padding:0;list-style: none;
 
 }
 #CUS-service-btn{
-	display: flex;
-    justify-content:center;
-    align-items: center;
 	font-size:16px;	
 	width:180px;
 	height: 28px;
@@ -257,5 +269,26 @@ a{text-decoration: none;color: #fff;}ul,li{margin: 0;padding:0;list-style: none;
 			
 	margin:0 auto;	
 	position: relative;
-	bottom: 40px;
+	bottom: 10px;
+	left:40px;
 }
+.baoming{
+	text-align: center;
+    position: relative;
+    top:50px;
+}
+.entryClass{   
+    float: right;
+    width: 125px;
+    height: 37px;
+    background-color: #739eed;
+    line-height: 37px;
+    color: #fff;
+    border-radius: 6px;
+    text-align: center;
+    position: absolute;
+    top: 200px;
+    right: 40px;
+
+
+    }
